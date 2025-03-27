@@ -6,8 +6,11 @@ import { Title } from '@/shared/ui/kit/title';
 import { Text } from '@/shared/ui/kit/text';
 import { Button } from '@/shared/ui/kit/button';
 import Image from 'next/image';
+import { useContactDialogStore } from '@/features/contact-dialog/services';
 
 export function Welcome() {
+  const { setOpen } = useContactDialogStore();
+
   return (
     <section className={st.layout}>
       <Tag>Welcome to 11Hosts</Tag>
@@ -19,7 +22,7 @@ export function Welcome() {
         Whether you&#39;re launching your first project or migrating your entire
         infrastructure — 11Hosts is here to support your journey.
       </Text>
-      <Button>Let&#39;s Talk Hosting</Button>
+      <Button onClick={() => setOpen(true)}>Let&#39;s Talk Hosting</Button>
       <section className={st.cloud}>
         <Image src="/images/cloud.svg" alt="cloud" fill />
         <Image

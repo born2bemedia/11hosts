@@ -1,0 +1,47 @@
+.cloud {
+  height: 500px;
+  position: relative;
+  width: 100%;
+}
+
+.cloudIcon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-40%, -30%);
+}
+
+.layout {
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+  align-items: center;
+  margin: 0 64px 100px 64px;
+
+  button {
+    width: max-content;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    padding-top: 150px;
+    margin: 0 16px 50px 16px;
+
+    .titelBr {
+      display: none;
+    }
+  }
+
+  .cloud {
+    width: 715px;
+    height: 200px;
+  }
+
+  .cloudIcon {
+    width: 40px;
+    height: 40px;
+  }
+}

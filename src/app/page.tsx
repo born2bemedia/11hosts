@@ -1,3 +1,13 @@
+import { ComingSoon, Welcome, WhatsComing } from './components';
+import { ContactDialog } from '@/features/contact-dialog/components';
+
 export default function Home() {
-  return <p>Hello</p>;
+  return (
+    <main>
+      <Welcome />
+      <WhatsComing />
+      <ComingSoon />
+      <ContactDialog />
+    </main>
+  );
 }

@@ -1,0 +1,93 @@
+.layout {
+  margin: 100px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 74px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.title {
+  color: #262626;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text {
+  color: #686868;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.services {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.offset {
+  margin-top: -50px;
+}
+
+.cardLayout {
+  height: max-content;
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 32px;
+  border: 1px solid #6060FE;
+  background-color: #F8F8F8;;
+  gap: 56px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.00) 0%, rgba(96, 96, 254, 0.25) 100%);
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+  }
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 34px;
+  gap: 24px;
+}
+
+
+@media (max-width: 1024px) {
+  .services {
+    flex-direction: column;
+  }
+
+  .cardLayout {
+    width: 100%;
+  }
+
+  .offset {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    gap: 24px;
+    margin: 100px 16px 50px 16px;
+  }
+}

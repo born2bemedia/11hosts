@@ -38,6 +38,10 @@ input, textarea {
   font-family: 'Outfit', sans-serif;
 }
 
+input:focus, textarea:focus {
+  outline: none;
+}
+
 address {
   margin: 0;
   padding: 0;

@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 import 'modern-normalize/modern-normalize.css';
 import { Header } from '@/shared/ui/components/header';
-import { Footer } from '@/shared/ui/components/footer/footer';
+import { Footer } from '@/shared/ui/components/footer';
+import { Preloader } from '@/shared/ui/components/preloader';
 
 export const metadata: Metadata = {
   title: '11host',
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <Preloader />
         <Footer />
       </body>
     </html>

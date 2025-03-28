@@ -35,7 +35,7 @@ export function WhatsComing() {
   return (
     <section className={st.layout}>
       <section className={st.text}>
-        <Tag>Features</Tag>
+        <Tag width={140}>Features</Tag>
         <Title>What&#39;s coming</Title>
       </section>
       <section className={st.services}>

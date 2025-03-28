@@ -12,7 +12,7 @@ export function ComingSoon() {
   return (
     <section className={st.layout}>
       <section className={st.info}>
-        <Tag>Coming Soon</Tag>
+        <Tag width={180}>Coming Soon</Tag>
         <Title>
           The future of hosting is almost here. In the meantime, feel free to
           explore or reach out to us with any questions.

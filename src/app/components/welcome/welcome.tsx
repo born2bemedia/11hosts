@@ -7,6 +7,7 @@ import { Text } from '@/shared/ui/kit/text';
 import { Button } from '@/shared/ui/kit/button';
 import Image from 'next/image';
 import { useContactDialogStore } from '@/features/contact-dialog/services';
+import { PulsingEllipse } from '@/app/components/pulsing-ellipse/pulsing-ellipse';
 
 export function Welcome() {
   const { setOpen } = useContactDialogStore();
@@ -25,6 +26,7 @@ export function Welcome() {
       <Button onClick={() => setOpen(true)}>Let&#39;s Talk Hosting</Button>
       <section className={st.cloud}>
         <Image src="/images/cloud.svg" alt="cloud" fill />
+        <PulsingEllipse />
         <Image
           className={st.cloudIcon}
           src="/images/cloud-icon.svg"

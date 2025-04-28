@@ -66,7 +66,7 @@ export function ContactDialog() {
             {!thankYou ? (
               <form onSubmit={onSubmit} className={st.formLayout}>
                 <Title as="h3" className={st.title}>
-                  Get in Touch with WRT
+                  Get in Touch With Our Expert Hosting Team
                 </Title>
                 <Close className={st.close}>
                   <CloseIcon />
